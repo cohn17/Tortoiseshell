@@ -69,3 +69,67 @@ html {
   margin-right: -2rem;
   width: auto;
 }
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 21rem;
+  height: 8rem;
+  margin: 3rem auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+}
+
+.exam img {
+  width: 3.5rem;
+}
+
+.fitting img {
+  width: 4.5rem;
+}
+
+.delivery img {
+  width: 4.5rem;
+}
+
+.box p {
+  text-align: center;
+}
+
+.phil-app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.phil-app-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 46%;
+}
+
+.phil-app-head {
+  display: block;
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: azure;
+  padding: 4rem 2rem;
+  margin-top: 5rem;
+}
