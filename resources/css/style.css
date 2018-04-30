@@ -54,6 +54,14 @@ html {
   display: inline-flex;
   padding-right: 2rem;
 }
+
+.navmenu {
+  display: none;
+  text-align: right;
+  padding-right: 2rem;
+  width: 100%;
+}
+
 /*css relating to the slogan in the banner*/
 .slogan {
   display: inline-block;
@@ -152,10 +160,25 @@ html {
     margin-right: 2rem;
   }
 }
+
+/*one thing I note is that the navigation links wrap prior to 640px, which I don't like, so I'm fixing that.*/
+@media only screen and (max-width: 795px) {
+  .nav {
+    display: none;
+  }
+  .navmenu {
+    display: block;
+    text-align: right;
+    padding-right: 2rem;
+    width: 100%;
+  }
+}
+
 /*responsive design for small screens*/
 @media only screen and (max-width: 640px) {
   .banner {
     height: 17rem;
+    background-position: 20%;
   }
   .slogan {
     width: 100%;
@@ -174,7 +197,8 @@ html {
   }
   .box p {
     font-size: 0.77rem;
-    margin: 1.54rem 0;
+    margin-top: 1.54rem;
+    margin-bottom: 1rem;
   }
   .phil-app {
     flex-direction: column;
